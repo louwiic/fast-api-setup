@@ -2,12 +2,6 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware 
 import uvicorn 
 
-import asyncio
-
-futures = [...]
-loop = asyncio.get_event_loop()
-loop.run_until_complete(asyncio.wait(futures))
-
 app = FastAPI() 
 
 origins = ['*']
